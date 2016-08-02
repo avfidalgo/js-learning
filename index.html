@@ -1,0 +1,147 @@
+<html>
+
+<head>
+
+    <style>
+        .texto_bonito {
+            font-family: "helvetica";
+            font-size: 24
+        }
+
+        #ola {
+            font-size: 18
+        }
+
+        .tableHeader {
+          font-family: Helvetica
+          font-size: 22
+        }
+
+        #th1 {
+
+        }
+
+        .texto{
+          font-size: 24
+        }
+
+        .footer .texto  {
+          font-size: 12
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo" class="texto_bonito">
+    commuting calculator
+  </h1>
+
+    <h2 class="texto_bonito">hello</h2>
+    <input type="text" id="textCaixa" value="">
+
+
+    </input>
+
+    <input type="button" value="hello" onClick=lerTextDaCaixa() id="ola">
+    </input>
+
+    <input type="text" value="" id="valor1">
+    </input>
+
+    <input type="text" value="" id="valor2">
+    </input>
+
+    <input type="button" value="" onclick="soma()">
+    </input>
+
+
+
+
+    <p class="texto">
+        Texto normal _2
+
+    </p>
+
+
+
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <br />
+    <br />
+
+    <input type="button" value="carro" onClick=lercars()>
+    </input>
+
+    <p id="carroEscolhido">
+    </p>
+
+
+    <table id="table"style="width:100%">
+        <tr>
+            <th id="tableHeader" id="th1">Firstname</th>
+            <th id="tableHeader" id="th2">Lastname</th>
+            <th id="tableHeader">Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+
+
+    <div class="footer">
+      <p class="texto">
+          Texto normal
+
+      </p>
+    </div>
+
+
+
+
+    <script>
+        // Quero ler o texto dentro da input box
+
+
+        // Click no botao e aparece um alert com o texto da input
+        lerTextDaCaixa = function() {
+
+            var textCaixaInput = document.getElementById('textCaixa').value;
+
+            alert(textCaixaInput);
+
+            // document.getElementById('texto').innerHTML = "<h1>" + textCaixaInput +"<h1>"
+
+        }
+
+        lercars = function() {
+
+            var lercars = document.getElementById('cars').value;
+            document.getElementById('carroEscolhido').innerHTML = lercars
+
+
+
+
+            //document.getElementById('cars').value = "<p>" + cars + "<p>"
+        }
+    </script>
+
+
+
+</body>
+
+</html>
